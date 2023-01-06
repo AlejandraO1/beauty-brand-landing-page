@@ -4,9 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Then I Met You</title>
   </head>
   <body>
+    <style>
+      body {
+        background-color: #99bae3;
+        color: #f5ebdf;
+        font-family: "Mulish", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 15px;
+      }
+
+      img {
+        border-radius: 12px;
+        margin-top: 15px;
+      }
+
+      .image-and-description {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .description {
+        padding: 25px 15px;
+      }
+
+      .description h3 {
+        font-size: 35px;
+      }
+
+      .description p {
+        font-size: 20px;
+        margin-top: 10px;
+        line-height: normal;
+      }
+
+      button {
+        padding: 12px;
+        line-height: 18px;
+        font-size: 16px;
+        border: 1px solid #f5ebdf;
+        border-radius: 12px;
+        box-shadow: 5px 5px 5px #808080;
+        background-color: #f5ebdf;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #99bae3;
+        color: #f5ebdf;
+      }
+    </style>
     <h1>Then I Met You</h1>
+    <div class="container">
+      <div class="row image-and-description">
+        <div class="col-md-6 description">
+          <h3>Best of Beauty Allure Winner | Living Cleansing Balm™</h3>
+          <p>
+            This luxurious, sorbet-soft oil cleanser melts away oil-based
+            impurities such as sunscreen, makeup and excess sebum while
+            nourishing the skin with antioxidants, essential fatty acids and
+            vitamin E. The oil cleanser combines a blend of lightweight grape
+            seed, olive and seaberry oils. Many state that this cleanser smells
+            just like a mango smoothie sensorial, aromatic experience designed
+            to delight your senses and leave your skin soft and clean.
+          </p>
+          <button>Buy Now</button>
+        </div>
+        <div class="col-md-6 image-column">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/014/original/PDP-Image-Then-I-Met-You-Living-Cleansing-Balm-Korean-Skincare-Product_0b935a42-2a2a-440e-b630-9a8d4c1c92bc.jpg?1668203678"
+            width="300"
+            height="400"
+            class="image"
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
