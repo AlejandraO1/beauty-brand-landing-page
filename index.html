@@ -20,9 +20,12 @@
   </head>
   <body>
     <style>
+      :root {
+        --primary-color: #99bae3;
+        --secondary-color: #f5ebdf;
+      }
+
       body {
-        background-color: #99bae3;
-        color: #f5ebdf;
         font-family: "Mulish", sans-serif;
       }
 
@@ -32,11 +35,13 @@
         font-family: "Open Sans", sans-serif;
       }
 
+      /*Hero*/
       h1 {
         text-align: center;
         padding: 15px;
       }
 
+      /*Footer*/
       ul {
         list-style: none;
         display: flex;
@@ -55,6 +60,8 @@
         justify-content: space-evenly;
         gap: 0;
         padding: 10px 20px 10px;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
       }
 
       .logo {
@@ -68,14 +75,13 @@
         margin-top: 15px;
       }
 
-      .content {
-        text-align: center;
-        margin: 15px;
-        padding: 25px 15px;
-      }
-
       .image-and-description {
         padding: 15px;
+      }
+
+      .hero {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
       }
 
       h3 {
@@ -106,16 +112,33 @@
         color: #f5ebdf;
       }
 
-      .section-3-col {
-        margin-top: 15px;
+      .content {
+        background-color: var(--secondary-color);
+      }
+
+      .columns-section {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 45px;
+      }
+
+      .section-3-col .col-md-4 {
+        border: 1px solid #f5ebdf;
       }
 
       .newsletter {
-        margin-top: 15px;
+        background-color: var(--secondary-color);
+        color: black;
+        text-align: center;
       }
 
-      footer {
-        margin-top: 15px;
+      .newsletter h4 {
+        margin: 0;
+      }
+
+      footer p {
+        background-color: var(--primary-color);
+        margin: 0;
       }
     </style>
     <div class="heading">
@@ -134,7 +157,7 @@
         <li>Checkout</li>
       </ul>
     </div>
-    <div class="content">
+    <div class="hero">
       <div class="container">
         <div class="row image-and-description">
           <div class="col-md-6 description">
@@ -160,6 +183,10 @@
             />
           </div>
         </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
         <div class="row image-and-description">
           <div class="col-md-6">
             <img
@@ -182,6 +209,10 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="columns-section">
+      <div class="container">
         <div class="row section-3-col">
           <div class="col-md-4">
             <h3>Our Story</h3>
@@ -214,11 +245,11 @@
             </p>
           </div>
         </div>
-        <div class="newsletter">
-          <h3>Newsletter</h3>
-          <h4>Sign up for the latest updates</h4>
-        </div>
       </div>
+    </div>
+    <div class="newsletter">
+      <h3>Newsletter</h3>
+      <h4>Sign up for the latest updates</h4>
     </div>
     <footer>
       <p>Made by avid skin care enthusiast Alejandra Ortega</p>
