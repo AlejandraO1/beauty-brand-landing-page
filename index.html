@@ -51,6 +51,17 @@
         cursor: pointer;
       }
 
+      li a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      li a:hover {
+        background-color: var(--tertiary-color);
+        color: black;
+      }
+
       .heading {
         display: flex;
         flex-direction: row;
@@ -113,6 +124,10 @@
       button:hover {
         background-color: transparent;
       }
+      button a {
+        color: black;
+        text-decoration: none;
+      }
       /*tonic-product-section*/
       .tonic-product-section {
         background-color: var(--accent-color);
@@ -152,6 +167,19 @@
       }
 
       /*newsletter*/
+      input {
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+      }
+
+      .sign-up {
+        transition: all 200ms ease-in-out;
+      }
+
+      .sign-up:hover {
+        background-color: var(--primary-color);
+      }
+
       .newsletter {
         text-align: center;
         padding: 60px 25px;
@@ -161,6 +189,7 @@
       .newsletter h4 {
         margin-bottom: 25px;
       }
+
       /*footer*/
       footer p {
         background-color: var(--primary-color);
@@ -172,8 +201,8 @@
     <div class="heading">
       <ul>
         <li>Shop All</li>
-        <li>Our Story</li>
-        <li>Jeong In Action</li>
+        <li><a href="#our-story">Our Story</a></li>
+        <li><a href="#jeong">Jeong In Action</a></li>
       </ul>
       <img
         class="logo"
@@ -181,7 +210,7 @@
       />
       <ul>
         <li>Search</li>
-        <li>Sign In</li>
+        <li><a href="#sign-up">Sign Up</a></li>
         <li>Checkout</li>
       </ul>
     </div>
@@ -200,12 +229,18 @@
               designed to delight your senses and leave your skin soft and
               clean.
             </p>
-            <button>Buy Now</button>
+            <button>
+              <a
+                href="https://thenimetyou.com/products/living-cleansing-balm"
+                target="_blank"
+                >Buy Now</a
+              >
+            </button>
           </div>
           <div class="col-md-6 image-column">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/014/original/PDP-Image-Then-I-Met-You-Living-Cleansing-Balm-Korean-Skincare-Product_0b935a42-2a2a-440e-b630-9a8d4c1c92bc.jpg?1668203678"
-              width="300"
+              width="350"
               height="400"
               class="image"
             />
@@ -219,7 +254,7 @@
           <div class="col-md-6 image-column">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/696/original/Screen_Shot_2023-01-20_at_12.24.24_PM.png?1674235480"
-              width="300"
+              width="400"
               height="400"
               class="image"
             />
@@ -238,12 +273,18 @@
               formulated with a blend of papaya enzymes, licorice root extract,
               seaberry/sea buckthorne oil and persimmon extract.
             </p>
-            <button>Buy Now</button>
+            <button>
+              <a
+                href="https://thenimetyou.com/products/living-sea-cleansing-tonic"
+                target="_blank"
+                >Buy Now</a
+              >
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="our-story-section">
+    <div class="our-story-section" id="our-story">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -268,8 +309,8 @@
           <div class="col-md-6 image-column">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/711/original/TIMY_CalmingTideGelCream_Charlotte_001_LowRes.jpg?1674851030"
-              width="400"
-              height="400"
+              width="450"
+              height="450"
             />
           </div>
         </div>
@@ -300,7 +341,7 @@
               have clean and natural formulations.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" id="jeong">
             <h3>Jeong In Action</h3>
             <p>
               Jeong is a Korean cultural value in which one can have a deep,
@@ -313,7 +354,7 @@
         </div>
       </div>
     </div>
-    <div class="newsletter">
+    <div class="newsletter" id="sign-up">
       <h3>Newsletter</h3>
       <h4>Sign up for the latest updates</h4>
       <form>
