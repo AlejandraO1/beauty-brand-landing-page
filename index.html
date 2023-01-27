@@ -318,11 +318,19 @@
       <h4>Sign up for the latest updates</h4>
       <form>
         <input type="search" />
-        <input type="submit" value="Sign up" />
+        <input type="submit" value="Sign up" class="sign-up" />
       </form>
     </div>
     <footer>
       <p>Made by avid skin care enthusiast <strong>Alejandra Ortega</strong></p>
     </footer>
+    <script>
+      function acceptEmail(event) {
+        event.preventDefault();
+        alert(`Thank you for signing up! Hope you will enjoy our products!`);
+      }
+      let signUpButton = document.querySelector(".sign-up");
+      signUpButton.addEventListener("click", acceptEmail);
+    </script>
   </body>
 </html>
