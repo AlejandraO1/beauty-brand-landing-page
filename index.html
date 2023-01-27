@@ -24,6 +24,7 @@
         --primary-color: #99bae3;
         --secondary-color: #f5ebdf;
         --tertiary-color: #b4d2fd;
+        --accent-color: #e8f2fe;
       }
 
       body {
@@ -35,9 +36,10 @@
       h3 {
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
+        text-align: center;
       }
 
-      /*Footer*/
+      /*Header*/
       ul {
         list-style: none;
         display: flex;
@@ -70,6 +72,7 @@
         border-radius: 12px;
       }
 
+      /*Hero*/
       .image-and-description {
         padding: 100px 25px;
       }
@@ -89,7 +92,7 @@
 
       p {
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 15px;
         line-height: normal;
         text-align: start;
       }
@@ -99,38 +102,71 @@
         line-height: 18px;
         font-size: 16px;
         border: 1px solid #f5ebdf;
-        border-radius: 12px;
         box-shadow: 5px 5px 5px #808080;
         background-color: #f5ebdf;
         transition: all 200ms ease-in-out;
         cursor: pointer;
+        display: block;
+        margin: 20px auto;
       }
 
       button:hover {
-        background-color: #99bae3;
-        color: #f5ebdf;
+        background-color: transparent;
+      }
+      /*tonic-product-section*/
+      .tonic-product-section {
+        background-color: var(--accent-color);
+      }
+      /*our-story-section*/
+      blockquote {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        padding: 50px 25px;
       }
 
-      .columns-section {
-        padding: 70px 25px;
+      blockquote p {
+        font-size: 25px;
+      }
+      blockquote .author {
+        text-align: end;
       }
 
-      .section-3-col .col-md-4 {
-        border: 1px solid #f5ebdf;
+      .quote {
+        background-color: var(--tertiary-color);
       }
 
+      .our-story-section {
+        padding: 60px 25px;
+        background-color: var(--accent-color);
+      }
+
+      /*more-info-section*/
+      .more-info-section {
+        padding: 60px 25px;
+        background-color: var(--accent-color);
+      }
+
+      .more-info-section p {
+        text-align: center;
+      }
+
+      /*newsletter*/
       .newsletter {
         text-align: center;
         padding: 60px 25px;
+        background-color: var(--accent-color);
       }
 
       .newsletter h4 {
-        margin: 0;
+        margin-bottom: 25px;
       }
-
+      /*footer*/
       footer p {
         background-color: var(--primary-color);
         margin: 0;
+        padding: 25px;
+        text-align: center;
       }
     </style>
     <div class="heading">
@@ -177,7 +213,7 @@
         </div>
       </div>
     </div>
-    <div class="content">
+    <div class="tonic-product-section">
       <div class="container">
         <div class="row image-and-description">
           <div class="col-md-6 image-column">
@@ -191,53 +227,69 @@
           <div class="col-md-6">
             <h3>Living Sea Cleansing Tonic</h3>
             <p>
-              This is the latest product. The refreshing cleansing toner
+              This is our latest product. The refreshing cleansing toner
               hydrates and removes impurities from the skin, including makeup.
               The gentle toner will not strip the skin's natural moisture and
-              will leave the skin feeling soft, plump and pristine. Made with
-              86% Deep Sea Water sourced from Gangwon, Korea and formulated with
-              a blend of papaya enzymes, licorice root, seaberry and persimmon
-              extract.
+              will leave the skin feeling soft, plump and pristine. Can be used
+              anytime of the day.
             </p>
+            <p>
+              Made with 86% Deep Sea Water sourced from Gangwon, Korea and
+              formulated with a blend of papaya enzymes, licorice root extract,
+              seaberry/sea buckthorne oil and persimmon extract.
+            </p>
+            <button>Buy Now</button>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <div class="our-story-section">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h3>Our Story</h3>
             <p>
               Then I Met You was founded by Charlotte Cho. She believes that a
-              skin care routine should be a sensorial ritual. By combining
-              Korean heritage ingredients and innovative science, Then I Met You
-              gives you products that aid in your skin care routine as well as
-              being clinically effective.
+              skin care routine should be a sensorial ritual. After living in
+              South Korea for about 5 years, Charlotte developed a deep
+              connection with her culture, her skin as well as her jeong. By
+              combining Korean heritage ingredients such as fermented rice,
+              ginseng and persimmon, as well as innovative science, Then I Met
+              You gives you products that aid in your skin care routine while
+              also being clinically effective.
+            </p>
+            <p>
+              When you have a profound relationship with your skincare routine,
+              Then I Met You believes that you will enjoy the action of applying
+              products which makes you apply products more consistently and thus
+              reaping all of the benefits.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 image-column">
             <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/697/original/Charlotte-Cho-Soko-Glam-The-Lifestyle-Edit-5.jpg?1674846238"
-              width="450"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/711/original/TIMY_CalmingTideGelCream_Charlotte_001_LowRes.jpg?1674851030"
+              width="400"
               height="400"
-              class="image"
             />
           </div>
         </div>
       </div>
+    </div>
+    <div class="quote">
       <blockquote>
         <p>
-          "With Then I Met You, I am going even deeper in my quest—not only
-          curating, but crafting truly transformative skin care products that
-          will stay a part of your life for years to come." -Charlotte Cho,
-          Founder of Then I Met You
+          <strong
+            >"With Then I Met You, I am going even deeper in my quest — not only
+            curating, but crafting truly transformative skin care products that
+            will stay a part of your life for years to come."</strong
+          >
         </p>
+        <p class="author">-Charlotte Cho, Founder of Then I Met You</p>
       </blockquote>
     </div>
-    <div class="columns-section">
+    <div class="more-info-section">
       <div class="container">
-        <div class="row section-3-col">
+        <div class="row">
           <div class="col-md-6">
             <h3>Sustainability</h3>
             <p>
