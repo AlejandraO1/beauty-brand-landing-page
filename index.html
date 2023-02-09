@@ -29,6 +29,7 @@
 
       body {
         font-family: "Mulish", sans-serif;
+        cursor: default;
       }
 
       h1,
@@ -59,7 +60,7 @@
 
       li a:hover {
         background-color: var(--tertiary-color);
-        color: black;
+        color: #000;
       }
 
       .heading {
@@ -125,7 +126,7 @@
         background-color: transparent;
       }
       button a {
-        color: black;
+        color: #000;
         text-decoration: none;
       }
       /*tonic-product-section*/
@@ -152,7 +153,7 @@
       }
 
       .our-story-section {
-        padding: 60px 25px;
+        padding: 50px 25px;
         background-color: var(--accent-color);
       }
 
@@ -188,6 +189,7 @@
 
       .newsletter h4 {
         margin-bottom: 25px;
+        opacity: 0.9;
       }
 
       /*footer*/
@@ -196,6 +198,16 @@
         margin: 0;
         padding: 25px;
         text-align: center;
+      }
+
+      footer a {
+        color: #212529;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      footer a:hover {
+        color: var(--secondary-color);
       }
 
       /*Responsiveness*/
@@ -246,9 +258,9 @@
               nourishing the skin with antioxidants, essential fatty acids and
               vitamin E. The oil cleanser combines a blend of lightweight grape
               seed, olive and seaberry oils. Many state that this cleanser
-              smells just like a mango smoothie sensorial, aromatic experience
-              designed to delight your senses and leave your skin soft and
-              clean.
+              smells just like a mango smoothie, making it a sensorial, aromatic
+              experience. Designed to delight your senses and leave your skin
+              soft and clean.
             </p>
             <button>
               <a
@@ -356,7 +368,7 @@
             <h3>Sustainability</h3>
             <p>
               There is a focus on sustainability through Then I Met You.
-              Packages are 100% recyclable and are printed with soy ink. Their
+              Packages are 100% recyclable and are printed with soy ink. Our
               manufacturers and formulators are certified in providing safe and
               ethical working conditions across the supply chain. The products
               have clean and natural formulations.
@@ -367,7 +379,7 @@
             <p>
               Jeong is a Korean cultural value in which one can have a deep,
               meaniningful connection with people, places and things. The
-              practice of Jeong is embodied within Then I Met You as its purpose
+              practice of Jeong is embodied within Then I Met You as our purpose
               is to help create a deep connection between people and their skin
               care rituals.
             </p>
@@ -379,12 +391,20 @@
       <h3>Newsletter</h3>
       <h4>Sign up for the latest updates</h4>
       <form>
-        <input type="search" />
+        <input type="search" placeholder="Enter your email" />
         <input type="submit" value="Sign up" class="sign-up" />
       </form>
     </div>
     <footer>
-      <p>Made by avid skin care enthusiast <strong>Alejandra Ortega</strong></p>
+      <p>
+        Made by avid skin care enthusiast <strong>Alejandra Ortega</strong> and
+        is
+        <a
+          href="https://github.com/AlejandraO1/beauty-brand-landing-page"
+          target="_blank"
+          >open-sourced</a
+        >
+      </p>
     </footer>
     <script>
       function acceptEmail(event) {
